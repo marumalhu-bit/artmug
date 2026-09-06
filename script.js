@@ -37,6 +37,7 @@
     var dots = fade.querySelectorAll('[data-cu-dot]');
     if (!slides.length) return;
     fade.dataset.fadeReady = '1';
+    var autoplay = fade.getAttribute('data-autoplay') !== 'false';
     var idx = 0;
     var timer = null;
     var paused = false;
@@ -47,7 +48,7 @@
       dots.forEach(function (dot, i) { dot.classList.toggle('on', i === idx); });
     }
     function stop() { if (timer) { clearInterval(timer); timer = null; } }
-    function start() { stop(); if (!paused) timer = setInterval(function () { show(idx + 1); }, 2600); }
+    function start() { stop(); if (!paused && autoplay) timer = setInterval(function () { show(idx + 1); }, 2600); }
 
     dots.forEach(function (dot) {
       dot.addEventListener('click', function (e) {
