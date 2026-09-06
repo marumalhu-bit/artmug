@@ -15,7 +15,7 @@ button, input, select, textarea { max-width: 100%; }
 .fancy-demo {
   font-family: 'Onglip Bakdahyun', 'Apple SD Gothic Neo', 'Malgun Gothic', sans-serif;
   font-size: 18px; color: #5a4a6a; background: #fffafc; text-align: left;
-  max-width: 720px; margin: 0 auto;
+  max-width: 1200px; margin: 0 auto;
   --cu-ink: #5a4a6a; --cu-mute: #9a87a0; --cu-line: #f3e4ec; --cu-soft: #fff0f6;
   --cu-pink: #ffb3d1; --cu-lav: #d9c4ff; --cu-mint: #b8f0e0; --cu-peach: #ffe0c8; --cu-radius: 4px;
 }
