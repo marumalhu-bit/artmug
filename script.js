@@ -55,6 +55,20 @@
       });
     });
 
+    var prevBtn = fade.querySelector('[data-cu-fade-prev]');
+    var nextBtn = fade.querySelector('[data-cu-fade-next]');
+    if (prevBtn) prevBtn.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); show(idx - 1); start(); });
+    if (nextBtn) nextBtn.addEventListener('click', function (e) { e.preventDefault(); e.stopPropagation(); show(idx + 1); start(); });
+
+    var stage = fade.querySelector('.cu-fade-stage');
+    if (stage) {
+      stage.addEventListener('click', function (e) {
+        if (e.target.closest('[data-cu-fade-prev]') || e.target.closest('[data-cu-fade-next]')) return;
+        show(idx + 1);
+        start();
+      });
+    }
+
     fade.addEventListener('mouseenter', function () { paused = true; stop(); });
     fade.addEventListener('mouseleave', function () { paused = false; start(); });
     start();
