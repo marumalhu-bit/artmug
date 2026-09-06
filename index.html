@@ -38,9 +38,9 @@
         <span class="fd-doodle-bubble" role="status" data-key="캐릭터2_말풍선">작가님의 포트폴리오를<br>보고 싶어요!</span>
         <span class="fd-doodle-icon" aria-hidden="true"><img src="assets/cute-icons/bear.svg" alt="" data-img-key="캐릭터2_아이콘"></span>
       </button>
-      <button type="button" class="fd-doodle" data-cu-doodle data-cu-target="cu-sec-quote"
+      <button type="button" class="fd-doodle" data-cu-doodle data-cu-target="cu-sec-video"
         style="--cu-bubble:#ffb0f3;--cu-bubble-ink:#6a3a6a;--cu-bubble-glow:rgba(255,176,243,0.28)">
-        <span class="fd-doodle-bubble" role="status" data-key="캐릭터3_말풍선">견적을 알고 싶어요!</span>
+        <span class="fd-doodle-bubble" role="status" data-key="캐릭터3_말풍선">포트폴리오 영상을 보고 싶어요!</span>
         <span class="fd-doodle-icon" aria-hidden="true"><img src="assets/cute-icons/unicorn.svg" alt="" data-img-key="캐릭터3_아이콘"></span>
       </button>
       <button type="button" class="fd-doodle" data-cu-doodle data-cu-target="cu-sec-flow"
@@ -82,62 +82,21 @@
 
     <div class="cu-shop" data-cu-fade>
       <div class="cu-fade">
-        <div class="cu-fade-stage">
+        <div class="cu-fade-stage" data-cu-fade-stage>
           <button type="button" class="cu-fade-nav cu-fade-prev" data-cu-fade-prev aria-label="이전 슬라이드">‹</button>
           <button type="button" class="cu-fade-nav cu-fade-next" data-cu-fade-next aria-label="다음 슬라이드">›</button>
-          <div class="cu-fade-slide is-on" data-cu-slide="0">
-            <img data-img-key="포트폴리오_슬라이드1_이미지" alt="" style="display:none">
-            <div class="cu-fade-copy">
-              <span class="cu-fade-num">01</span>
-              <span class="cu-fade-title" data-key="포트폴리오_슬라이드1_제목">샘플 A</span>
-              <span class="cu-fade-sub" data-key="포트폴리오_슬라이드1_설명">원하는 이미지를 넣을 수 있습니다</span>
-            </div>
-          </div>
-          <div class="cu-fade-slide" data-cu-slide="1">
-            <img data-img-key="포트폴리오_슬라이드2_이미지" alt="" style="display:none">
-            <div class="cu-fade-copy">
-              <span class="cu-fade-num">02</span>
-              <span class="cu-fade-title" data-key="포트폴리오_슬라이드2_제목">샘플 B</span>
-              <span class="cu-fade-sub" data-key="포트폴리오_슬라이드2_설명">원하는 이미지를 넣을 수 있습니다</span>
-            </div>
-          </div>
-          <div class="cu-fade-slide" data-cu-slide="2">
-            <img data-img-key="포트폴리오_슬라이드3_이미지" alt="" style="display:none">
-            <div class="cu-fade-copy">
-              <span class="cu-fade-num">03</span>
-              <span class="cu-fade-title" data-key="포트폴리오_슬라이드3_제목">샘플 C</span>
-              <span class="cu-fade-sub" data-key="포트폴리오_슬라이드3_설명">원하는 이미지를 넣을 수 있습니다</span>
-            </div>
-          </div>
-          <div class="cu-fade-slide" data-cu-slide="3">
-            <img data-img-key="포트폴리오_슬라이드4_이미지" alt="" style="display:none">
-            <div class="cu-fade-copy">
-              <span class="cu-fade-num">04</span>
-              <span class="cu-fade-title" data-key="포트폴리오_슬라이드4_제목">샘플 D</span>
-              <span class="cu-fade-sub" data-key="포트폴리오_슬라이드4_설명">원하는 이미지를 넣을 수 있습니다</span>
-            </div>
-          </div>
+          <div class="cu-fade-empty" data-cu-fade-empty>이미지를 추가하면 여기에 표시됩니다</div>
         </div>
-        <div class="cu-fade-dots">
-          <button type="button" class="cu-fade-dot on" data-cu-dot="0" aria-label="슬라이드 1"></button>
-          <button type="button" class="cu-fade-dot" data-cu-dot="1" aria-label="슬라이드 2"></button>
-          <button type="button" class="cu-fade-dot" data-cu-dot="2" aria-label="슬라이드 3"></button>
-          <button type="button" class="cu-fade-dot" data-cu-dot="3" aria-label="슬라이드 4"></button>
-        </div>
+        <div class="cu-fade-dots" data-cu-fade-dots></div>
       </div>
     </div>
   </section>
 
-  <section class="fd-sec" data-cu-reveal id="cu-sec-quote">
-    <div class="fd-sec-head is-center"><span class="fd-num">04</span><h2 data-key="견적_제목">견적</h2></div>
-    <p class="fd-sec-lead" data-key="견적_설명">옵션을 고르면 바로 합계가 나오는 견적 영역입니다.</p>
-    <div class="fd-price-calc" data-demo-quote>
-      <div class="fd-price-list">
-        <button type="button" class="fd-price-row on" data-demo-price="30000" data-demo-name="기본 양식"><span data-key="견적_옵션1_이름">기본 양식</span><span data-key="견적_옵션1_가격">30,000원</span></button>
-        <button type="button" class="fd-price-row" data-demo-price="50000" data-demo-name="오마카세"><span data-key="견적_옵션2_이름">오마카세</span><span data-key="견적_옵션2_가격">50,000원</span></button>
-        <button type="button" class="fd-price-row" data-demo-price="5000" data-demo-name="추가 기능"><span data-key="견적_옵션3_이름">추가 기능</span><span data-key="견적_옵션3_가격">+5,000원</span></button>
-      </div>
-      <div class="fd-price-total"><span>예상 견적</span><strong data-demo-total>30,000원</strong></div>
+  <section class="fd-sec" data-cu-reveal id="cu-sec-video">
+    <div class="fd-sec-head is-center"><span class="fd-num">04</span><h2 data-key="포트폴리오영상_제목">포트폴리오 영상</h2></div>
+    <p class="fd-sec-lead" data-key="포트폴리오영상_설명">유튜브 영상으로 작업물을 확인할 수 있습니다.</p>
+    <div class="fd-video-list" data-cu-video-list>
+      <div class="fd-video-empty" data-cu-video-empty>유튜브 링크를 추가하면 여기에 표시됩니다</div>
     </div>
   </section>
 
