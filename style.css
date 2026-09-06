@@ -161,15 +161,9 @@ button, input, select, textarea { max-width: 100%; }
 }
 
 .cu-shop { margin-top: 2px; }
-.cu-shop-split {
-  display: grid; grid-template-columns: 1.15fr 1fr; gap: 10px; align-items: stretch;
-}
-@media (max-width: 420px) {
-  .cu-shop-split { grid-template-columns: 1fr; }
-}
 .cu-fade { min-width: 0; }
 .cu-fade-stage {
-  position: relative; width: 100%; height: 100%; min-height: 220px; aspect-ratio: 3 / 4;
+  position: relative; width: 100%; min-height: 260px; aspect-ratio: 4 / 3;
   overflow: hidden; background: #ffe8f3; border-radius: 14px;
 }
 .cu-fade-slide {
@@ -193,26 +187,6 @@ button, input, select, textarea { max-width: 100%; }
   transition: width 0.3s ease, background 0.3s ease;
 }
 .cu-fade-dot.on { width: 14px; background: #ff9ec4; }
-.cu-shop-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 10px 8px; min-width: 0;
-}
-.cu-shop-card { background: transparent; }
-.cu-shop-thumb {
-  aspect-ratio: 1; background: #fff0f6; border-radius: 14px; overflow: hidden;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 16px; font-weight: 800; color: #c9a0b4;
-  transition: transform 0.45s cubic-bezier(0.22,1,0.36,1);
-  position: relative;
-}
-.cu-shop-thumb img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-.cu-shop-card:nth-child(1) .cu-shop-thumb { background: linear-gradient(160deg, #ffe0ef, #ffd0e4); }
-.cu-shop-card:nth-child(2) .cu-shop-thumb { background: linear-gradient(160deg, #e8d8ff, #dcc8ff); }
-.cu-shop-card:nth-child(3) .cu-shop-thumb { background: linear-gradient(160deg, #d4f5ea, #c0eedc); }
-.cu-shop-card:nth-child(4) .cu-shop-thumb { background: linear-gradient(160deg, #ffe8d0, #ffd8b0); }
-.cu-shop-card:hover .cu-shop-thumb { transform: scale(1.03); }
-.cu-shop-meta { padding: 10px 2px 0; text-align: center; }
-.cu-shop-meta strong { display: block; font-size: 16px; font-weight: 700; color: var(--cu-ink); margin-bottom: 3px; letter-spacing: -0.02em; }
-.cu-shop-meta span { font-size: 15px; color: var(--cu-mute); font-weight: 500; }
 
 .fd-price-list { display: flex; flex-direction: column; gap: 7px; margin-top: 2px; }
 .fd-price-row {

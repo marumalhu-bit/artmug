@@ -39,7 +39,7 @@
   function applyContent(map) {
     document.querySelectorAll('[data-key]').forEach(function (el) {
       var key = el.getAttribute('data-key');
-      if (Object.prototype.hasOwnProperty.call(map, key) && map[key] !== '') {
+      if (Object.prototype.hasOwnProperty.call(map, key)) {
         el.innerHTML = map[key];
       }
     });
